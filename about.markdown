@@ -4,15 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+<img align="center" src="/wp-content/uploads/2021/08/cropped-johnny-automatic-NPS-map-pictographs-part-100-270x270.png" />
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Hello my name is Felix! I´m studying in Berlin and I love coding besides other things. If you have ideas for cooperation don´t hesitate to message me.
 
-
-[jekyll-organization]: https://github.com/jekyll
+Have a wonderful day!
