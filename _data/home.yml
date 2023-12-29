@@ -1,12 +1,12 @@
 navbar_entries:
   - title: home
-    url: 
+    url: https://the-red-rabbit.github.io/
 
   - title: blog
-    url: blog
+    url: https://the-red-rabbit.github.io/blog
 
   - title: about
-    url: about
+    url: https://the-red-rabbit.github.io/about
 
 project_entries:
   - title: Project 1
@@ -58,7 +58,7 @@ footer_entries:
     url: https://github.com/The-Red-Rabbit/
 
   - title: mail
-    url: feed.xml
+    url: mailto:theredrabbit@mail.de?subject=Message%20from%20homepage%20visitor&body=Hey%20Felix!My%20name%20is...
 
 misc_entries:
   - title: this is an example vertical list
