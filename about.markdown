@@ -5,8 +5,10 @@ permalink: /about/
 ---
 
 
-<img align="center" src="/wp-content/uploads/2021/08/cropped-johnny-automatic-NPS-map-pictographs-part-100-270x270.png" />
+<img align="center" width="50%" alt="Felix" src="/uploads/imgs/me.webp" />
 
-Hello my name is Felix! I´m studying in Berlin and I love coding besides other things. If you have ideas for cooperation don´t hesitate to message me.
+Hello my name is Felix!
+
+I´m studying in Berlin and I love coding besides other things like painting miniatures, planning events together with my friends and windsurfing. If you have ideas for cooperation don´t hesitate to message me.
 
 Have a wonderful day!
