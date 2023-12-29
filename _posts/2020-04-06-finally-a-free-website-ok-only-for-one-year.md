@@ -7,8 +7,7 @@ layout: post
 guid: 'https://gluecksmaschine.digital/?p=358'
 permalink: /blog/2020/04/06/finally-a-free-website-ok-only-for-one-year/
 image: 'http://redr.uber.space/wp-content/uploads/2021/06/pexels-photo-2881224-210x140.jpeg'
-categories:
-    - Personal
+categories: Personal
 ---
 
 So a good friend of mine gave me this little advice: Get a 1-year free domain via [Github Students](https://education.github.com/pack) (if you’re a student). This was the incentive to search for an appropriate hosting service for my website, of course: free.

@@ -11,7 +11,7 @@ categories: Projects
 tag: Coding
 ---
 
-For some time now I’m trying to learn Java &amp; object-oriented programming. As a practice I’ve made an app prototype which you can download here.
+For some time now I’m trying to learn Java &amp; object-oriented programming. As a practice I’ve made an app-prototype which you can download here:
 
 [Download simple-goals.apk](https://drive.google.com/uc?export=download&id=1jZoZtg06FMpPQIKd2cQLjg19m5_TalOK)
 
