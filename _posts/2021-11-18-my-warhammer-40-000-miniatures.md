@@ -14,6 +14,8 @@ categories: Personal
 
 When I was a teenager I loved to collect &amp; paint Warhammer 40k miniatures. Many of my friends back then did this aswell and we could play hour long battles on the weekends. I grew older and with my interests shifting I sold all of my miniatures. But with the start of the pandemic I picked it up again…
 
+[Name of Link]({% post_url 2021-11-18-my-warhammer-40-000-miniatures %})
+
 {% include image-gallery.html folder="/uploads/imgs/wh40k" %}
 
 *More photos coming soon!*
