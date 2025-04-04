@@ -6,8 +6,8 @@ layout: default
 {% include date_and_social_share.html %}
 
 {% if page.protected %}
-    {% include protection.html %}
     <div id="content" style="display: none;">{{ content }}</div>
+    {% include protection.html %}
 {% else %}
     {{ content }}
 {% endif %}
