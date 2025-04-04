@@ -4,8 +4,10 @@ layout: default
 
 <h1 class="post-title">{{ page.title }}</h1>
 {% include date_and_social_share.html %}
-{{ content }}
 
 {% if page.protected %}
     {% include protection.html %}
+    <div id="content" style="display: none;">{{ content }}</div>
+{% else %}
+    {{ content }}
 {% endif %}

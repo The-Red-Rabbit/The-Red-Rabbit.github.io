@@ -3,19 +3,24 @@
 </form>
 
 <p id="opTag"></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js" integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-    const crypto = require('crypto');
 
     var form = document.getElementById("formId");
     var pw = document.getElementById("inputId");
     var opTag = document.getElementById("opTag");
+    var content = document.getElementById("content");
     function submitForm(event) {
        event.preventDefault();
-       form.style.display = "none";
-       opTag.innerHTML = "<b>Form submit successful with </b>"+pw.value;
-       hashPwd = crypto.createHash('sha1').update(pw.value).digest('hex');
-       console.log(hashPwd);
+       var hash = CryptoJS.SHA256(pw.value);
+       if (hash.toString(CryptoJS.enc.Base64) == "zdPuA2OI2KjYBEzvTxlAfnlnaldiHgHDD4KtaR8i66k=") {
+        console.log("correct password");
+        form.style.display = "none";
+        content.style.display = "block";
+       } else {
+        opTag.innerHTML = "<b>Incorrect password!</b>";
+       }
     }
     form.addEventListener('submit', submitForm);
  </script>
