@@ -16,6 +16,7 @@
        var hash = CryptoJS.SHA256(pw.value);
        if (hash.toString(CryptoJS.enc.Base64) == "zdPuA2OI2KjYBEzvTxlAfnlnaldiHgHDD4KtaR8i66k=") {
         console.log("correct password");
+        console.log(content);
         form.style.display = "none";
         content.style.display = "block";
        } else {
