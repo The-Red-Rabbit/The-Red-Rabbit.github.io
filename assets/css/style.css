@@ -1,3 +1,7 @@
+#formId {
+    margin: 2em auto;
+}
+
 
 /* Style for the password input field */
 input[type="password"] {
