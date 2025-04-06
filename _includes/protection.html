@@ -1,3 +1,30 @@
+
+/* Style for the password input field */
+input[type="password"] {
+    background-color: #2c2c2c; /* Matches the dark background theme */
+    color: #ffffff; /* White text for readability */
+    border: 1px solid #444444; /* Subtle border color */
+    padding: 10px; /* Adds comfortable spacing */
+    border-radius: 5px; /* Smooth rounded corners */
+    font-size: 16px; /* Ensures clear text size */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Adds depth with shadow */
+}
+
+/* Style for the "Open" button */
+button {
+    background-color: #444444; /* Complements the theme */
+    color: #ffffff; /* Contrasts nicely for text */
+    border: none; /* Removes border for clean look */
+    padding: 10px 20px; /* Balanced spacing */
+    border-radius: 5px; /* Rounded corners for consistency */
+    font-size: 16px; /* Easy-to-read font */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #555555; /* Slightly lighter shade on hover */
+}
 <form id="formId">
     <input id="inputId" name="answer" type="password" placeholder="Password?"/> <button type="submit">Open</button>
 </form>
