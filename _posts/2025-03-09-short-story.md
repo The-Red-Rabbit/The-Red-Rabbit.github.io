@@ -1,5 +1,5 @@
 ---
-title: 'Short Story: Ein Quantum Freiheit (Teil 1)'
+title: '🔒 Short Story: Ein Quantum Freiheit (Teil 1)'
 date: '2025-03-09T13:24:42+00:00'
 author: redr
 layout: post
