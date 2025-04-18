@@ -49,7 +49,38 @@
     <div class="container">
         <div class="row p-3">
             <div class="col-sm">
-                <img src="img/bungalow.jpg" class="img-fluid" alt="blue sky">
+                <img src="img/bungalow.jpg" class="img-fluid" alt="blue sky" data-bs-toggle="modal" data-bs-target="#galleryModal">
+
+
+                <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                          <div class="modal-body">
+                              <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                                  <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                          <img src="img/terasse.jpg" class="img-fluid mx-auto d-block">
+                                      </div>
+                                      <div class="carousel-item">
+                                          <img src="https://picsum.photos/300/200" class="img-fluid mx-auto d-block">
+                                      </div>
+                                      <div class="carousel-item">
+                                          <img src="https://picsum.photos/200/300" class="img-fluid mx-auto d-block">
+                                      </div>
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon"></span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon"></span>
+                                  </button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+                
             </div>
             <div class="col-sm">
                 <p>
@@ -61,14 +92,13 @@
             </div>
         </div>
     </div>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top px-3">
         <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
-            <svg class="bi" width="30" height="24" aria-hidden="true"><use xlink:href="#bootstrap"/></svg>
-          </a>
           <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025 bungalow-in-zinnowitz</span>
         </div>
-    
+        <div class="col-md-4 justify-content-end d-flex">
+          <a href="impressum.html" class="text-body-secondary">Impressum</a>
+        </div>
       </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>
