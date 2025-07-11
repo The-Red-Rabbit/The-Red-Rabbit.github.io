@@ -1,0 +1,7 @@
+---
+created: 2025-07-11T14:35:36+02:00
+modified: 2025-07-11T14:35:58+02:00
+type: Journal
+---
+
+This is a git journal test.
