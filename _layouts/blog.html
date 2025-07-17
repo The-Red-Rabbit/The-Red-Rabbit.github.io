@@ -4,14 +4,12 @@ layout: default
 
 <h1>{{ site.theme_config.home.title_blog }}</h1>
 
-{% assign category_order = "Personal,Projects" | split: "," %}
+{% assign sorted_categories = site.categories | sort_natural: "first" %}
 
-{% for cat in category_order %}
-  {% assign posts = site.categories[cat] %}
-  {% if posts %}
-    <h3>{{ cat }}</h3>
+{% for cat in sorted_categories %}
+    <h3>{{ cat[0] }}</h3>
     <ul>
-      {% for post in posts %}
+      {% for post in cat[1] %}
       <li class="post-list-item">
           <span class="home-date">
             {{ post.date | date: site.theme_config.date_format }}»
