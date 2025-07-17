@@ -9,4 +9,3 @@ categories: Personal
 
 # Digitalisation &mdash; Or how things get into computers
 
-
