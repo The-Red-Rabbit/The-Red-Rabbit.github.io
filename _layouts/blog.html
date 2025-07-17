@@ -2,21 +2,19 @@
 layout: default
 ---
 
-<h1>{{ site.theme_config.home.title_blog }}</h1>
+<h1>{{ site.themeconfig.home.titleblog }}</h1>
 
-{% assign sorted_categories = site.categories | sort_natural: "first" %}
 
-{% for cat in sorted_categories %}
-    <h3>{{ cat[0] }}</h3>
-    <ul>
-      {% for post in cat[1] %}
-      <li class="post-list-item">
-          <span class="home-date">
-            {{ post.date | date: site.theme_config.date_format }}»
-          </span>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+    <li class="post-list-item">
+        <span class="home-date">
+          {{ post.date | date: site.themeconfig.dateformat }}»
+        </span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 {% endfor %}
