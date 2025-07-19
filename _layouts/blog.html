@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>{{ site.theme_config.home.titleblog }}</h1>
+<h1>{{ site.theme_config.home.title_blog }}</h1>
 
 
 {% for category in site.categories %}
@@ -11,7 +11,7 @@ layout: default
     {% for post in category[1] %}
     <li class="post-list-item">
         <span class="home-date">
-          {{ post.date | date: site.theme_config.dateformat }}»
+          {{ post.date | date: site.theme_config.date_format }}»
         </span>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </li>
