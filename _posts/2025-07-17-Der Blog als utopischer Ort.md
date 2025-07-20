@@ -15,4 +15,4 @@ Dieser Wunsch blieb mir über die Jahre erhalten und so zogen meine Blogeinträg
 Facebook, Instagram, Twitter (ich weigere mich es 𝕏 zu nennen) und so weiter sind für viele, mich eingeschlossen, zu einer Last oder sogar einem Zwang geworden.
 Selbstverständlich kann man die Plattformen nutzen wie man möchte, aber schlussendlich ist man doch von ihnen abhängig; sei es die Gestaltung des eigenen Profils/Seite oder die Sichtbarkeit. Denn wer nicht regelmäßig viel postet, wird nicht angezeigt.
 Nicht so hier. Teilweise liegen Jahre zwischen den einzelnen Beiträgen und statt einem generischen Profil, habe ich das Aussehen und die Struktur der Seite selbst festlegen können.
-Die Illusion von Nähe steht im Vordergrund 
+Die Illusion von Nähe steht im Vordergrund, statt echter Selbstmitteilung und Kreativität.
