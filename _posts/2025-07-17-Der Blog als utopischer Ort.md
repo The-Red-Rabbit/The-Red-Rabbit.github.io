@@ -16,3 +16,9 @@ Facebook, Instagram, Twitter (ich weigere mich es 𝕏 zu nennen) und so weiter 
 Selbstverständlich kann man die Plattformen nutzen wie man möchte, aber schlussendlich ist man doch von ihnen abhängig; sei es die Gestaltung des eigenen Profils/Seite oder die Sichtbarkeit. Denn wer nicht regelmäßig viel postet, wird nicht angezeigt.
 Nicht so hier. Teilweise liegen Jahre zwischen den einzelnen Beiträgen und statt einem generischen Profil, habe ich das Aussehen und die Struktur der Seite selbst festlegen können.
 Die Illusion von Nähe steht im Vordergrund, statt echter Selbstmitteilung und Kreativität.
+
+Die Oberflächlichkeit gipfelt in seiner kapitalistischen Verwertungslogik im aktuellen KI-Trend. Wie man (hoffentlich oder leider) merkt, sind die Beiträge hier, dieser eingeschlossen, komplett selbst verfasst.[^1]
+
+## Der Blog als utopischer Ort
+
+[^1]: Natürlich 
