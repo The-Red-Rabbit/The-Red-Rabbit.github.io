@@ -1,5 +1,5 @@
 ---
-title: '2025-07-17-Der Blog als utopischer Ort'
+title: 'Der Blog als utopischer Ort'
 date: '2025-07-17T12:39:47+00:00'
 author: redr
 layout: post
@@ -12,4 +12,4 @@ Dieser Wunsch blieb mir über die Jahre erhalten und so zogen meine Blogeinträg
 
 ## Was Social Media nicht leisten kann
 
-Facebook, Instagram, Twitter (ich weigere mich es ![](icon://fab-x-twitter) zu nennen) und so weiter sind für viele, mich eingeschlossen, zu einer Last oder sogar einem Zwang geworden.
+Facebook, Instagram, Twitter (ich weigere mich es 𝕏 zu nennen) und so weiter sind für viele, mich eingeschlossen, zu einer Last oder sogar einem Zwang geworden.
