@@ -13,3 +13,4 @@ Dieser Wunsch blieb mir über die Jahre erhalten und so zogen meine Blogeinträg
 ## Was Social Media nicht leisten kann
 
 Facebook, Instagram, Twitter (ich weigere mich es 𝕏 zu nennen) und so weiter sind für viele, mich eingeschlossen, zu einer Last oder sogar einem Zwang geworden.
+Selbstverständlich kann man die Plattformen nutzen wie man möchte, aber schlussendlich ist man doch von ihnen abhängig; sei es die Gestaltung des eigenen Profils/Seite oder die Sichtbarkeit. Denn wer nicht regelmäßig viel postet, wird nicht angezeigt.
