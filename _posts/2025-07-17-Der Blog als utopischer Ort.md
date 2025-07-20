@@ -21,4 +21,20 @@ Die Oberflächlichkeit gipfelt in seiner kapitalistischen Verwertungslogik im ak
 
 ## Der Blog als utopischer Ort
 
-[^1]: Natürlich 
+Manchmal träume ich von einer Welt in der jede\*r einen eigenen kleinen Blog hat. Gefüllt mit Gedanken, Fotos, Erinnerungen, Kurzgeschichten und Anekdoten. Aber diese Vorstellung wird immer eine Utopie bleiben. Neben dem nötigen Knowhow und der Muße so eine Webseite einzurichten, bleibt das größte Problem folgendes:
+
+> Niemand ließt deinen Blog. Man schreibt ihn höchstens für sich selbst.
+
+Natürlich gibt es nennenswerte Ausnahmen wie [Wait But Why](waitbutwhy.com) von Tim Urban, aber meine Sorge um Suchmaschinenoptimierung und Aufrufzahlen würde bei so einer Popularität meine Freude hemmen.
+Ich finde es schön auf meinem Blog in meinem eigenen Tempo, mit der gewünschten Tiefe und in meinem Ton meinen Gedanken Ausdruck zu verleihen. Hier gibt es keine Likes, Shares oder Kommentare - nur Ideen die Platz haben dürfen.
+
+## Was mich wirklich motiviert
+
+Es fällt mir manchmal schwer, mich verletzlich zu zeigen und zu meinen, zugegeben sehr nerdigen, Interessen zu stehen. Vielleicht würden diese Zeilen mehr Freund\*innen und Bekannte lesen, würde ich mehr von meinem Blog erzählen oder beispielsweise den Link in mein WhatsApp Profil schreiben.
+Eventuell mache ich das eines Tages doch bis dahin bleibt es eine Übung und mein kleiner persönlicher Ort im Netz um meine Gedanken und Ideen zu speichern. Ich kann jede\*n nur ermutigen, selbst zu schreiben und nicht auf die Reichweite oder Prestige zu schielen.
+
+> Vielleicht liest niemand diesen Text - und vielleicht ist das okay.
+
+---
+
+[^1]: Natürlich kann KI ein wertvolles Werkzeug sein, wie zum Beispiel zum Sortieren der eigenen Gedanken beim Schreiben.
