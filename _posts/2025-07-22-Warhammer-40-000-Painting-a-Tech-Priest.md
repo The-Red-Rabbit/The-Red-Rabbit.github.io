@@ -7,7 +7,7 @@ categories: Personal
 ---
 ![Warhammer 40k](/uploads/imgs/magos.webp)
 
-<sub><sup>combining the two tags</sup></sub>
+<sub><sup>(Beautiful artwork by [Dmitry Brushray](https://www.patreon.com/brushray))</sup></sub>
 
 As promised in [this post]({% post_url 2021-11-18-my-warhammer-40-000-miniatures %}) here are some more images of a miniature I painted recently. A friend of mine is a huge Adeptus Mechanicus fan so I decided to paint a *Tech-Priest Dominus* and gift it to him.
 
