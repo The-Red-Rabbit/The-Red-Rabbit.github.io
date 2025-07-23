@@ -5,7 +5,7 @@ author: redr
 layout: post
 categories: Personal
 ---
-![Warhammer 40k](/uploads/imgs/warhammer%2040k.webp)
+![Warhammer 40k](/uploads/imgs/magos.webp)
 ^test^ Test
 ~test~ Test
 
