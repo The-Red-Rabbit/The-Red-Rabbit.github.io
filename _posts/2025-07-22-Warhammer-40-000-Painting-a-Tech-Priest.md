@@ -5,6 +5,10 @@ author: redr
 layout: post
 categories: Personal
 ---
+![Warhammer 40k](/uploads/imgs/warhammer%2040k.webp)
+^test^ Test
+~test~ Test
+
 As promised in [this post]({% post_url 2021-11-18-my-warhammer-40-000-miniatures %}) here are some more images of a miniature I painted recently. A friend of mine is a huge Adeptus Mechanicus fan so I decided to paint a *Tech-Priest Dominus* and gift it to him.
 
 Here you can see the result:
