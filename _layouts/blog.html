@@ -18,3 +18,8 @@ layout: default
     {% endfor %}
   </ul>
 {% endfor %}
+
+
+{% for tag in site.tags %}
+<h4>{{ tag[0] }} ({{ tag[1].size }})</h4>
+{% endfor %}
