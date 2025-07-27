@@ -35,12 +35,6 @@ collections:
     output: true
     permalink: /tag/:title/
 
-defaults:
-  - scope:
-      path: ""
-      type: tags
-    values:
-      layout: tag
 
 # Build settings
 theme: minima
