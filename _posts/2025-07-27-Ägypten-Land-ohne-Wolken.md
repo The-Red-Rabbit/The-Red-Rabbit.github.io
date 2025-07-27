@@ -4,6 +4,6 @@ date: '2025-07-27T10:38:30+00:00'
 author: redr
 layout: post
 categories: Personal
-tags: German
+tags: German Travel
 ---
 Video
