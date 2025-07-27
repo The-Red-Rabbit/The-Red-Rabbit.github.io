@@ -32,6 +32,8 @@ github_username:  jekyll
 jekyll-archives:
   enabled:
     - tags
+  layouts:
+    tag: tag
 
 # Build settings
 theme: minima
