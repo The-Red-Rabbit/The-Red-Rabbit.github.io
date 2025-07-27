@@ -37,5 +37,3 @@ gem "colorator", "~> 1.1"
 gem "jekyll-watch", "~> 2.2"
 
 gem "webrick", "~> 1.8"
-
-gem "jekyll-archives"
