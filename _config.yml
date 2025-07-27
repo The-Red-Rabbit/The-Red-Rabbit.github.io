@@ -30,10 +30,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Collections
-collections:
-  tags:
+#collections:
+#  tags:
 #    output: true
-    permalink: /tag/:title/
+#    permalink: /tag/:title/
 
 defaults:
   - scope:
