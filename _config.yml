@@ -32,7 +32,7 @@ github_username:  jekyll
 # Collections
 collections:
   tags:
-    output: true
+#    output: true
     permalink: /tag/:title/
 
 defaults:
