@@ -29,12 +29,6 @@ url: "https://The-Red-Rabbit.github.io" # the base hostname & protocol for your 
 twitter_username: jekyllrb
 github_username:  jekyll
 
-jekyll-archives:
-  enabled:
-    - tags
-  layouts:
-    tag: tag
-
 # Build settings
 theme: minima
 remote_theme: abhinavs/moonwalk
@@ -65,7 +59,6 @@ theme_config:
 plugins:
   - jekyll-feed
   - jekyll-remote-theme 
-  - jekyll-archives
 
 # Exclude from processing.
 # The following items will not be processed, by default.
