@@ -27,6 +27,4 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: lighten(var(--bg-secondary), 50%);
-}
+
