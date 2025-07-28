@@ -23,3 +23,14 @@ layout: default
 {% endfor %}
 
 
+
+<script>
+  const tag = new URLSearchParams(location.search).get('tag');
+  if (tag) {
+    document.querySelectorAll('#post-list li').forEach(el => {
+      const tags = el.dataset.tags.split(',');
+      if (!tags.includes(tag)) el.style.display = 'none';
+    });
+  }
+</script>
+
