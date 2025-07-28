@@ -25,7 +25,7 @@ layout: default
 
 
 <script>
-  const tag = new URLSearchParams(location.search).get('tag');
+  const tag = decodeURIComponent(new URLSearchParams(location.search).get('tag'));
   if (tag) {
     document.querySelectorAll('#post-list li').forEach(el => {
       const tags = el.dataset.tags.split(',');
