@@ -1,0 +1,24 @@
+{% if site.posts.size > 0 %}
+<h3>Latest Post</h3>
+  <ul>
+    {% for post in site.posts limit:1 %}
+      <li class="post-list-item">
+        <span class="home-date">
+          {{ post.date | date: site.theme_config.date_format }}»
+        </span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+<h3>Recent Posts</h3>
+  <ul>
+    {% for post in site.posts offset: 1 limit:5 %}
+      <li class="post-list-item">
+        <span class="home-date">
+          {{ post.date | date: site.theme_config.date_format }}»
+        </span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
