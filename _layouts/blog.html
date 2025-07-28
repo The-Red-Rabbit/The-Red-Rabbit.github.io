@@ -4,7 +4,7 @@ layout: default
 
 <h1>{{ site.theme_config.home.title_blog }}</h1>
 
-<span class="tag"><a href="{{ page.url }}">SHOW ALL ({{ site.posts.size }})</a></span> - 
+<span class="tag"><a href="{{ page.url }}">SHOW ALL ({{ site.posts.size }})</a></span>- 
 {% for tag in site.tags %}
 <span class="tag"><a href="?tag={{ tag[0] | url_encode }}">{{ tag[0] }} ({{ tag[1].size }})</a></span>
 {% endfor %}
