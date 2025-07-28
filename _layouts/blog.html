@@ -10,7 +10,7 @@ layout: default
 
 {% for category in site.categories %}
   <h3>{{ category[0] }}</h3>
-  <ul>
+  <ul id="post-list">
     {% for post in category[1] %}
     <li data-tags="{{ post.tags | join: ',' }}" class="post-list-item">
         <span class="home-date">
