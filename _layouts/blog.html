@@ -10,6 +10,7 @@ layout: default
 {% endfor %}
 
 {% for category in site.categories %}
+{% if category[1].size > 0 %}
   <h3>{{ category[0] }}</h3>
   <ul id="post-list">
     {% for post in category[1] %}
@@ -22,7 +23,7 @@ layout: default
     {% endfor %}
   </ul>
 {% endfor %}
-
+{% endif %}
 
 
 <script>
