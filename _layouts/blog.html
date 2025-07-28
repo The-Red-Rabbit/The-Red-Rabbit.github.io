@@ -4,12 +4,15 @@ layout: default
 
 <h1>{{ site.theme_config.home.title_blog }}</h1>
 
+{% for tag in site.tags %}
+<span class="tag"><a href="?tag={{ tag[0] | url_encode }}">{{ tag[0] }} ({{ tag[1].size }})</a></span>
+{% endfor %}
 
 {% for category in site.categories %}
   <h3>{{ category[0] }}</h3>
   <ul>
     {% for post in category[1] %}
-    <li class="post-list-item">
+    <li data-tags="{{ post.tags | join: ',' }}" class="post-list-item">
         <span class="home-date">
           {{ post.date | date: site.theme_config.date_format }}»
         </span>
@@ -20,8 +23,3 @@ layout: default
 {% endfor %}
 
 
-{% for tag in site.tags %}
-
-<span class="tag"><a href="#">{{ tag[0] }} ({{ tag[1].size }})</a></span>
-
-{% endfor %}
