@@ -28,5 +28,5 @@ button {
 }
 
 button:hover {
-    background-color: var(--bg);
+    background-color: hsl(var(--bg-secondary), 50%);
 }
