@@ -37,10 +37,11 @@ layout: default
     });
 
 document.querySelectorAll('#tag-nav span[data-tag]').forEach(link => {
-    if (link.dataset.tag === tag) link.style.backgroundColor = "var(--highlight)";
+    if (link.dataset.tag === tag) link.classList.add('active')
   });
   } else {
 document.getElementById('tag-all')?.classList.add('active');
+console.log(document.getElementById('tag-all')?.classList);
 }
 </script>
 
