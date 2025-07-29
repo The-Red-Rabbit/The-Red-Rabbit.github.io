@@ -6,4 +6,9 @@ layout: post
 categories: Personal
 tags: German Travel
 ---
-Video
+<div class="video-container">
+  <video controls>
+    <source src="{{ '/uploads/vids/egypt.mp4' | relative_url }}" type="video/mp4">
+    Dein Browser unterstützt dieses Videoformat nicht.
+  </video>
+</div>
