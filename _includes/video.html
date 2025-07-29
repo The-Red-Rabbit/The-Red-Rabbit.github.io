@@ -2,8 +2,6 @@
   <video 
     loading="lazy" 
     {% if include.poster %}poster="{{ include.poster }}"{% endif %} 
-    width="{{ include.width | default: '100%' }}" 
-    height="{{ include.height | default: 'auto' }}"
     controls>
     <source src="{{ include.src }}" type="video/mp4">
     Dein Browser unterstützt dieses Videoformat nicht.
@@ -12,13 +10,17 @@
 
 <style>
 .video-wrapper {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
+  max-width: 720px;  /* Begrenzung auf Desktop */
+  margin: 2rem auto;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .video-wrapper video {
+  width: 100%;
+  height: auto;
   display: block;
 }
 </style>
