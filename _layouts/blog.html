@@ -29,7 +29,9 @@ layout: default
 
 
 <script>
-  const tag = decodeURIComponent((new URLSearchParams(location.search).get('tag')).replace(/\+/g, ' '));
+const tagParam = new URLSearchParams(location.search).get('tag');
+const tag = tagParam ? decodeURIComponent(tagParam.replace(/\+/g, ' ')) : null;
+
   if (tag) {
     document.querySelectorAll('.post-list li').forEach(el => {
       const tags = el.dataset.tags.split(',');
@@ -48,5 +50,6 @@ console.log(document.getElementById('tag-all')?.classList);
 <style>
 .active {
 background-color: var(--highlight);
+color: var(--text) !important;
 }
 </style>
