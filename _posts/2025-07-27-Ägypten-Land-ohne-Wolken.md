@@ -10,5 +10,4 @@ tags: German Travel
 {% include video.html 
    src="/uploads/vids/egypt.mp4" 
    width="480"
-   height="848"
    poster="/uploads/vids/egypt_cover.jpg" %}
