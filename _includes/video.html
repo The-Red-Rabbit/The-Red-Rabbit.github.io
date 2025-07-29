@@ -1,4 +1,4 @@
-<div class="video-wrapper" style="width:100%; max-width:100%;">
+<div class="video-wrapper">
   <video 
     loading="lazy" 
     {% if include.poster %}poster="{{ include.poster }}"{% endif %} 
@@ -9,3 +9,18 @@
     Dein Browser unterstützt dieses Videoformat nicht.
   </video>
 </div>
+
+<style>
+.video-wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>
