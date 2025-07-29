@@ -4,15 +4,17 @@ layout: default
 
 <h1>{{ site.theme_config.home.title_blog }}</h1>
 
+<div id="tag-nav">
 <span class="tag" id="tag-all"><a href="{{ page.url }}">SHOW ALL ({{ site.posts.size }})</a></span>- 
 {% for tag in site.tags %}
-<span class="tag"><a href="?tag={{ tag[0] | url_encode }}">{{ tag[0] }} ({{ tag[1].size }})</a></span>
+<span class="tag" data-tag="{{ tag[0] }}"><a href="?tag={{ tag[0] | url_encode }}">{{ tag[0] }} ({{ tag[1].size }})</a></span>
 {% endfor %}
+</div>
 
 {% for category in site.categories %}
 {% if category[1].size > 0 %}
   <h3>{{ category[0] }}</h3>
-  <ul id="post-list">
+  <ul class="post-list">
     {% for post in category[1] %}
     <li data-tags="{{ post.tags | join: ',' }}" class="post-list-item">
         <span class="home-date">
@@ -29,12 +31,12 @@ layout: default
 <script>
   const tag = decodeURIComponent((new URLSearchParams(location.search).get('tag')).replace(/\+/g, ' '));
   if (tag) {
-    document.querySelectorAll('#post-list li').forEach(el => {
+    document.querySelectorAll('.post-list li').forEach(el => {
       const tags = el.dataset.tags.split(',');
       if (!tags.includes(tag)) el.style.display = 'none';
     });
 
-document.querySelectorAll('#tag-nav a[data-tag]').forEach(link => {
+document.querySelectorAll('#tag-nav span[data-tag]').forEach(link => {
     if (link.dataset.tag === tag) link.style.backgroundColor = "var(--highlight)";
   });
   } else {
