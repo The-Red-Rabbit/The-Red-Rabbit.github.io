@@ -6,8 +6,8 @@ layout: post
 categories: Personal
 tags: German Travel
 ---
-
+Some text.
 {% include video.html 
    src="/uploads/vids/egypt.mp4" 
-   width="480"
    poster="/uploads/vids/egypt_cover.jpg" %}
+Some more text for you to read.
