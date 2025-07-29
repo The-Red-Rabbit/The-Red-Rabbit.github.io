@@ -12,19 +12,21 @@ layout: default
 </div>
 
 {% for category in site.categories %}
-{% if category[1].size > 0 %}
-  <h3>{{ category[0] }}</h3>
-  <ul class="post-list">
-    {% for post in category[1] %}
-    <li data-tags="{{ post.tags | join: ',' }}" class="post-list-item">
-        <span class="home-date">
-          {{ post.date | date: site.theme_config.date_format }}»
-        </span>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+  {% if category[1].size > 0 %}
+    <div class="category-block" data-category="{{ category[0] }}">
+      <h3>{{ category[0] }}</h3>
+      <ul class="post-list">
+        {% for post in category[1] %}
+          <li data-tags="{{ post.tags | join: ',' }}" class="post-list-item">
+            <span class="home-date">
+              {{ post.date | date: site.themeconfig.dateformat }} »
+            </span>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
 {% endfor %}
 
 
