@@ -38,6 +38,11 @@ document.querySelectorAll('#tag-nav a[data-tag]').forEach(link => {
     if (link.dataset.tag === tag) link.style.backgroundColor = "var(--highlight)";
   });
   } else {
-document.getElementById('tag-all')?.style.backgroundColor = "var(--highlight)";
+document.getElementById('tag-all')?.classList.add('active');
 </script>
 
+<style>
+.active {
+background-color: var(--highlight);
+}
+</style>
