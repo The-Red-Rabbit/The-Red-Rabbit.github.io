@@ -31,22 +31,46 @@ layout: default
 
 
 <script>
-const tagParam = new URLSearchParams(location.search).get('tag');
-const tag = tagParam ? decodeURIComponent(tagParam.replace(/\+/g, ' ')) : null;
+ const urlParams = new URLSearchParams(location.search);
+  const tagRaw = urlParams.get('tag');
+  const tag = tagRaw ? decodeURIComponent(tagRaw.replace(/\+/g, ' ')) : null;
 
+  // Filter Beiträge nach Tag
   if (tag) {
-    document.querySelectorAll('.post-list li').forEach(el => {
-      const tags = el.dataset.tags.split(',');
-      if (!tags.includes(tag)) el.style.display = 'none';
+    document.querySelectorAll('.post-list-item').forEach(post => {
+      const tags = post.dataset.tags?.split(',') || [];
+      post.style.display = tags.includes(tag) ? '' : 'none';
     });
 
-document.querySelectorAll('#tag-nav span[data-tag]').forEach(link => {
-    if (link.dataset.tag === tag) link.classList.add('active')
-  });
+    // Kategorieblöcke ausblenden, wenn keine sichtbaren Posts enthalten
+    document.querySelectorAll('.category-block').forEach(category => {
+      const posts = category.querySelectorAll('.post-list-item');
+      const hasVisible = Array.from(posts).some(p => p.style.display !== 'none');
+      category.style.display = hasVisible ? '' : 'none';
+    });
+
+    // Aktiven Tag hervorheben
+    document.querySelectorAll('#tag-nav span[data-tag]').forEach(tagEl => {
+      if (tagEl.dataset.tag === tag) {
+        tagEl.classList.add('active');
+      }
+    });
+
+    // Falls keine Beiträge sichtbar → Hinweis anzeigen
+    const anyVisible = Array.from(document.querySelectorAll('.post-list-item'))
+      .some(post => post.style.display !== 'none');
+    if (!anyVisible) {
+      const msg = document.createElement('p');
+      msg.textContent = `🔍 Keine Beiträge mit Tag "${tag}" gefunden.`;
+      msg.style.marginTop = '1em';
+      msg.style.fontStyle = 'italic';
+      document.querySelector('main')?.appendChild(msg);
+    }
+
   } else {
-document.getElementById('tag-all')?.classList.add('active');
-console.log(document.getElementById('tag-all')?.classList);
-}
+    // Highlight "Alle anzeigen"
+    document.getElementById('tag-all')?.classList.add('active');
+  }
 </script>
 
 <style>
