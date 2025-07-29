@@ -17,7 +17,7 @@ layout: default
       <h3>{{ category[0] }}</h3>
       <ul class="post-list">
         {% for post in category[1] %}
-          <li data-tags="{{ post.tags | join: ',' }}" class="post-list-item">
+          <li data-tags="{{ post.tags | join: ',' }}" class="post-list-item entry">
             <span class="home-date">
               {{ post.date | date: site.theme_config.date_format }} »
             </span>
@@ -31,49 +31,62 @@ layout: default
 
 
 <script>
- const urlParams = new URLSearchParams(location.search);
+  const urlParams = new URLSearchParams(location.search);
   const tagRaw = urlParams.get('tag');
   const tag = tagRaw ? decodeURIComponent(tagRaw.replace(/\+/g, ' ')) : null;
 
-  // Filter Beiträge nach Tag
   if (tag) {
+    // Filter Beiträge
     document.querySelectorAll('.post-list-item').forEach(post => {
       const tags = post.dataset.tags?.split(',') || [];
-      post.style.display = tags.includes(tag) ? '' : 'none';
+      post.classList.toggle('hidden', !tags.includes(tag));
     });
 
-    // Kategorieblöcke ausblenden, wenn keine sichtbaren Posts enthalten
-    document.querySelectorAll('.category-block').forEach(category => {
-      const posts = category.querySelectorAll('.post-list-item');
-      const hasVisible = Array.from(posts).some(p => p.style.display !== 'none');
-      category.style.display = hasVisible ? '' : 'none';
+    // Kategorieblöcke ausblenden, wenn kein sichtbarer Beitrag enthalten
+    document.querySelectorAll('.category-block').forEach(block => {
+      const posts = block.querySelectorAll('.post-list-item');
+      const hasVisible = Array.from(posts).some(p => !p.classList.contains('hidden'));
+      block.style.display = hasVisible ? '' : 'none';
     });
 
     // Aktiven Tag hervorheben
     document.querySelectorAll('#tag-nav span[data-tag]').forEach(tagEl => {
-      if (tagEl.dataset.tag === tag) {
-        tagEl.classList.add('active');
-      }
+      if (tagEl.dataset.tag === tag) tagEl.classList.add('active');
     });
 
-    // Falls keine Beiträge sichtbar → Hinweis anzeigen
+    // Hinweis bei 0 Treffern
     const anyVisible = Array.from(document.querySelectorAll('.post-list-item'))
-      .some(post => post.style.display !== 'none');
+      .some(post => !post.classList.contains('hidden'));
     if (!anyVisible) {
       const msg = document.createElement('p');
-      msg.textContent = `🔍 No posts found with tag "${tag}".`;
-      msg.style.marginTop = '1em';
-      const tagNav = document.getElementById('tag-nav');
-  tagNav.insertAdjacentElement('afterend', msg);
+      msg.textContent = 🔍 Keine Beiträge mit Tag "${tag}" gefunden.;
+      msg.style.margin = '1em 0';
+      msg.style.fontStyle = 'italic';
+      document.getElementById('tag-nav')?.insertAdjacentElement('afterend', msg);
     }
 
   } else {
-    // Highlight "Alle anzeigen"
     document.getElementById('tag-all')?.classList.add('active');
   }
 </script>
 
 <style>
+ .entry {
+    opacity: 1;
+    filter: blur(0px);
+    transition: opacity 0.4s ease, filter 0.4s ease;
+  }
+
+  .entry.hidden {
+    opacity: 0;
+    filter: blur(4px);
+    pointer-events: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
 .active {
 background-color: var(--highlight);
 a {
