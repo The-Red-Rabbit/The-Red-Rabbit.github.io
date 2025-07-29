@@ -63,8 +63,8 @@ layout: default
       const msg = document.createElement('p');
       msg.textContent = `🔍 No posts found with tag "${tag}".`;
       msg.style.marginTop = '1em';
-      msg.style.fontStyle = 'italic';
-      document.querySelector('main')?.appendChild(msg);
+      const tagNav = document.getElementById('tag-nav');
+  tagNav.insertAdjacentElement('afterend', msg);
     }
 
   } else {
