@@ -6,10 +6,11 @@ layout: post
 categories: Personal
 tags: German Travel
 ---
-Some text.
+Bereits öfter habe ich Urlaub in Ägypten gemacht. Jedoch immer nur zu Ostern und noch nie im Sommer.
 {% include video.html 
    src="/uploads/vids/egypt.mp4" 
    poster="/uploads/vids/egypt_cover.jpg" %}
-Some more text for you to read.
-{% include video.html scr="https://file-examples.com/storage/fe2ae8fbf56883b019a7d6a/2017/04/file_example_MP4_480_1_5MG.mp4" %}
-Lorem ipsum.
+Es ist wirklich unbeschreiblich heiß 🐫🌴🏖️
+
+Meisten sind es um die 37° Celsius. Am Himmel sind keine Wolken zu sehen. Nie. Und in der Nacht ist es so warm wie in Deutschland an einem schönen Sommertag. Wenn man das klimatisierte Zimmer verlässt, beschlagen die Brillengläser wie im Winter.
+Im Meer zu schwimmen fühlt sich an wie in einer Badewanne zu liegen. Das Wasser ist 
