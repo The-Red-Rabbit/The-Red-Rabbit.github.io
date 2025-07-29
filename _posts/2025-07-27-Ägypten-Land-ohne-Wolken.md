@@ -14,3 +14,6 @@ Es ist wirklich unbeschreiblich heiß 🐫🌴🏖️
 
 Meisten sind es um die 37° Celsius. Am Himmel sind keine Wolken zu sehen. Nie. Und in der Nacht ist es so warm wie in Deutschland an einem schönen Sommertag. Wenn man das klimatisierte Zimmer verlässt, beschlagen die Brillengläser wie im Winter.
 Im Meer zu schwimmen fühlt sich an wie in einer Badewanne zu liegen.
+Dennoch ist es wunderschön in diesem Land, mit seiner einzigartigen Kultur und seinen Menschen.
+
+لا أحب الطقس الممطر.
