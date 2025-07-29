@@ -19,7 +19,7 @@ layout: default
         {% for post in category[1] %}
           <li data-tags="{{ post.tags | join: ',' }}" class="post-list-item">
             <span class="home-date">
-              {{ post.date | date: site.themeconfig.dateformat }} »
+              {{ post.date | date: site.theme_config.date_format }} »
             </span>
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
           </li>
