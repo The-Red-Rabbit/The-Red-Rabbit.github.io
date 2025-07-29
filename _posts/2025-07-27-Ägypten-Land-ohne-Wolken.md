@@ -13,4 +13,4 @@ Bereits öfter habe ich Urlaub in Ägypten gemacht. Jedoch immer nur zu Ostern u
 Es ist wirklich unbeschreiblich heiß 🐫🌴🏖️
 
 Meisten sind es um die 37° Celsius. Am Himmel sind keine Wolken zu sehen. Nie. Und in der Nacht ist es so warm wie in Deutschland an einem schönen Sommertag. Wenn man das klimatisierte Zimmer verlässt, beschlagen die Brillengläser wie im Winter.
-Im Meer zu schwimmen fühlt sich an wie in einer Badewanne zu liegen. Das Wasser ist 
+Im Meer zu schwimmen fühlt sich an wie in einer Badewanne zu liegen.
