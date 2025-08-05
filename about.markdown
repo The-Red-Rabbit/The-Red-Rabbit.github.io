@@ -7,11 +7,29 @@ permalink: /about/
 
 <img class="profile-pic" align="center" width="50%" alt="Felix" src="/uploads/imgs/me.webp" />
 
-Hello my name is Felix!
+### 👋 Hi, I'm Felix!
 
-I´m a teacher in Berlin and I love coding besides other things like painting miniatures, hanging out together with my friends and windsurfing. If you have ideas for cooperation don´t hesitate to [message me](mailto:theredrabbit@mail.de?subject=Message%20from%20homepage%20visitor&body=Hey%20Felix!My%20name%20is...).
+I’m a passionate teacher living in Berlin, with a love for learning that stretches far beyond the classroom. Coding is my playground—whether it’s web development or fun little automations, I enjoy the challenge and creativity that come with it.
 
-Have a wonderful day!
+---
+
+#### What Makes Me Tick:
+- 💻 **Coding**: My digital canvas—building, experimenting, problem-solving
+- 🎨 **Painting miniatures**: My analog escape with tiny brushes and epic fantasy
+- 🌊 **Windsurfing**: Nothing clears the mind like catching the wind
+- ☕ **Spending time with friends**: Good conversations and shared creativity fuel me
+
+---
+
+#### 🤝 Interested in working together?
+
+Whether it's a cool tech project, a creative venture, or something entirely new—drop me a message and let’s talk!  
+📬 [Message me](mailto:theredrabbit@mail.de?subject=Message%20from%20homepage%20visitor&body=Hey%20Felix!%20My%20name%20is...)
+
+---
+
+Have a wonderful day!  
+**– Felix**
 
 <style>
 .profile-pic {
