@@ -21,7 +21,7 @@ I’m a passionate teacher living in Berlin, with a love for learning that stret
 
 ---
 
-#### 🤝 Interested in working together?
+#### Interested in working together?
 
 Whether it's a cool tech project, a creative venture, or something entirely new—drop me a message and let’s talk!  
 📬 [Message me](mailto:theredrabbit@mail.de?subject=Message%20from%20homepage%20visitor&body=Hey%20Felix!%20My%20name%20is...)
