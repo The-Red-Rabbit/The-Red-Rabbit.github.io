@@ -17,3 +17,6 @@ Als der Zug unvermittelt in einen einen Tunnel einfuhr, trafen sich ihre Blicke 
 Er bildete sich ein, die Melodie etwas lauter zu hören. Er musste jetzt unbedingt wissen wer sie ist. Ihren Namen, welchen belanglosen Bürojob sie nachgeht, ob sie in einer WG oder doch noch bei ihren Eltern wohnte, ...
 Jetzt oder nie! Er nahm all seinen Mut zusammen und die Knöchel seiner Hand traten weiß hervor, als er vor Anspannung den Riemen seines Rucksacks umklammerte.
 Fast zeitgleich stand sie auf, als er sich von seinem Platz erhob. Sie drehte sich um und ging zielgerichtet auf das Ende des Wagens zu. Er versuchte sie einzuholen. Klick. Mit einer flüssigen Bewegung glitt sie in das WC und die Tür schloss sich vor ihm.
+
+Er wartete. Nach einer halben Ewigkeit fragte er sich, was er eigentlich hier machte. Sollte er sich einfach wieder auf seinen Platz setzen und die ganze Sache vergessen? Nein. Er konnte jetzt nicht gehen. Herauszufinden wer sie war, erschien ihm jetzt als sein dringendster Wunsch.
+Der Zug war leer. Außer dem Ratter war nichts zu hören.
