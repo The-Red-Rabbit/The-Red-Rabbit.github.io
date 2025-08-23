@@ -7,4 +7,76 @@ categories: Personal
 tags: German Travel
 ---
 
-Lorem ipsum
+<main>
+    <section class="station">
+      <div class="station-header">Edinburgh</div>
+      <div class="station-content">
+        <p>Die Altstadt, das Castle, und ein Hauch von Geschichte in jeder Gasse...</p>
+      </div>
+    </section>
+
+    <section class="station">
+      <div class="station-header">Isle of Skye</div>
+      <div class="station-content">
+        <p>Wilde Küsten, mystische Berge und das Gefühl, am Ende der Welt zu sein.</p>
+      </div>
+    </section>
+
+    <section class="station">
+      <div class="station-header">Glencoe</div>
+      <div class="station-content">
+        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+      </div>
+    </section>
+  </main>
+  
+  
+  <script>
+  // Optional: ScrollReveal oder andere Effekte kannst du hier einbauen
+// Beispiel:
+document.querySelectorAll('.station').forEach((section, index) => {
+  section.style.opacity = 0;
+  section.style.transition = 'opacity 0.6s ease';
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = 1;
+      }
+    });
+  }, { threshold: 0.1 });
+
+  observer.observe(section);
+});
+  </script>
+  
+  
+  <style>
+  main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.station {
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.station-header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  z-index: 10;
+}
+
+.station-content {
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+  </style>
