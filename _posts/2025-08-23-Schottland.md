@@ -55,7 +55,6 @@ document.querySelectorAll('.station').forEach((section, index) => {
   main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .station {
@@ -66,6 +65,7 @@ document.querySelectorAll('.station').forEach((section, index) => {
 .station-header {
   position: sticky;
   top: 0;
+  background: var(--bg);
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
