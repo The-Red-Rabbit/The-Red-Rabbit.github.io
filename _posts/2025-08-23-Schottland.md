@@ -9,7 +9,7 @@ tags: German Travel
 
 <main>
     <section class="station">
-<div class="station-header">### Brüssel ###</div>
+<div class="station-header"><h3>Brüssel</h3></div>
       <div class="station-content">
         <p>Die Altstadt, das Castle, und ein Hauch von Geschichte in jeder Gasse...</p>
       </div>
@@ -66,6 +66,7 @@ document.querySelectorAll('.station').forEach((section, index) => {
   position: sticky;
   top: 0;
   background: var(--bg);
+  color: var(--headings);
   padding: 1rem 0;
   border-bottom: 2px solid var(--bg-secondary);
   z-index: 10;
