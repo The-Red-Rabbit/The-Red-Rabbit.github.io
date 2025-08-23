@@ -69,12 +69,16 @@ document.querySelectorAll('.station').forEach((section, index) => {
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid var(--bg-secondary);
   z-index: 10;
 }
 
 .station-content {
   padding: 1rem;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.theme-toggle {
+  z-index: 999;
 }
   </style>
