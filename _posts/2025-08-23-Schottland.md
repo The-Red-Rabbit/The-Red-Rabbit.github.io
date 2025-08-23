@@ -66,7 +66,6 @@ document.querySelectorAll('.station').forEach((section, index) => {
 .station-header {
   position: sticky;
   top: 0;
-  background: #fff;
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -76,7 +75,6 @@ document.querySelectorAll('.station').forEach((section, index) => {
 
 .station-content {
   padding: 1rem;
-  background: #fff;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
   </style>
