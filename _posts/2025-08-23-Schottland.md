@@ -28,6 +28,55 @@ tags: German Travel
         <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
       </div>
     </section>
+    
+    <section class="station">
+      <div class="station-header"><h3>Etappe 2: Drymen &rarr; Rowardennan</h3></div>
+      <div class="station-content">
+        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+      </div>
+    </section>
+    
+    <section class="station">
+      <div class="station-header"><h3>Etappe 3: Rowardennan &rarr; Inverarnan</h3></div>
+      <div class="station-content">
+        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+      </div>
+    </section>
+    
+    <section class="station">
+      <div class="station-header"><h3>Etappe 4: Inverarnan &rarr; Tyndrum</h3></div>
+      <div class="station-content">
+        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+      </div>
+    </section>
+    
+    <section class="station">
+      <div class="station-header"><h3>Etappe 5: Tyndrum &rarr; Inveroran</h3></div>
+      <div class="station-content">
+        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+      </div>
+    </section>
+    
+    <section class="station">
+      <div class="station-header"><h3>Etappe 6: Inveroran &rarr; Kingshouse</h3></div>
+      <div class="station-content">
+        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+      </div>
+    </section>
+    
+    <section class="station">
+      <div class="station-header"><h3>Etappe 7: Kingshouse &rarr; Kinlochleven</h3></div>
+      <div class="station-content">
+        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+      </div>
+    </section>
+    
+    <section class="station">
+      <div class="station-header"><h3>Etappe 8: Kinlochleven &rarr; Fort William</h3></div>
+      <div class="station-content">
+        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+      </div>
+    </section>
   </main>
   
   
