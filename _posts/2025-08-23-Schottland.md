@@ -9,21 +9,21 @@ tags: German Travel
 
 <main>
     <section class="station">
-      <div class="station-header">Brüssel</div>
+      <div class="station-header">### Brüssel</div>
       <div class="station-content">
         <p>Die Altstadt, das Castle, und ein Hauch von Geschichte in jeder Gasse...</p>
       </div>
     </section>
 
     <section class="station">
-      <div class="station-header">Glasgow</div>
+      <div class="station-header">### Glasgow</div>
       <div class="station-content">
         <p>Wilde Küsten, mystische Berge und das Gefühl, am Ende der Welt zu sein.</p>
       </div>
     </section>
 
     <section class="station">
-      <div class="station-header">Etappe 1: Milngavine &rarr; Drymen</div>
+      <div class="station-header">### Etappe 1: Milngavine &rarr; Drymen</div>
       <div class="station-content">
         <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
       </div>
@@ -67,8 +67,6 @@ document.querySelectorAll('.station').forEach((section, index) => {
   top: 0;
   background: var(--bg);
   padding: 1rem 0;
-  font-size: 1.5rem;
-  font-weight: bold;
   border-bottom: 2px solid var(--bg-secondary);
   z-index: 10;
 }
