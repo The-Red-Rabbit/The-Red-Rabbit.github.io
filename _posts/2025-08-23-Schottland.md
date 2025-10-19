@@ -6,14 +6,17 @@ layout: post
 categories: Personal
 tags: German Travel
 ---
-
+Im Sommer 2025 hatte ich zusammen mit meiner Partnerin die Gelegenheit in Schottland eine Wanderung auf dem West Highland Way zu machen. Hier ist mein Reisebericht mit Fotos.
 <main>
     <section class="station">
 <div class="station-header"><h3>Brüssel</h3></div>
       <div class="station-content">
-        <p>Die Altstadt, das Castle, und ein Hauch von Geschichte in jeder Gasse...</p>
+        <p>Auf unserer Reise nutzten wir hauptsächlich Züge und kein Flugzeug. Um die Anreise entspannt zu gestalten, machten wir auf dieser Halt in Brüssel...</p>
         <div class="img-wrapper">
         <img src="/uploads/imgs/scotland/brussel_1.webp" alt="Brüssels Straßen">
+          </div>
+          <div class="img-wrapper">
+        <img src="/uploads/imgs/scotland/brussel_2.webp" alt="Brüssels Straßen">
           </div>
       </div>
     </section>
