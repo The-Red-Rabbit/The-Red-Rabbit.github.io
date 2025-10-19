@@ -12,7 +12,7 @@ tags: German Travel
 <div class="station-header"><h3>Brüssel</h3></div>
       <div class="station-content">
         <p>Die Altstadt, das Castle, und ein Hauch von Geschichte in jeder Gasse...</p>
-        <img src="uploads/imgs/scotland/brussel_1.webp" alt="Brüssels Straßen">
+        <img src="/uploads/imgs/scotland/brussel_1.webp" alt="Brüssels Straßen">
       </div>
     </section>
 
