@@ -24,7 +24,10 @@ Im Sommer 2025 hatte ich zusammen mit meiner Partnerin die Gelegenheit in Schott
     <section class="station">
 <div class="station-header"><h3>Glasgow</h3></div>
       <div class="station-content">
-        <p>Wilde Küsten, mystische Berge und das Gefühl, am Ende der Welt zu sein.</p>
+        <p>Unser erstes Ziel: Glasgow. Dort unternahmen wir eine digitale Stadtführung mit kleinen Rätseln.</p>
+        <div class="img-wrapper">
+        <img src="/uploads/imgs/scotland/glasgow_1.webp" alt="Glasgow">
+          </div>
       </div>
     </section>
 
