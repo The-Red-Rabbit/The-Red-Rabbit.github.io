@@ -69,14 +69,14 @@ Im Sommer 2025 hatte ich zusammen mit meiner Partnerin die Gelegenheit in Schott
     <section class="station">
       <div class="station-header"><h3>Etappe 6: Inveroran &rarr; Kingshouse</h3></div>
       <div class="station-content">
-        <p>Die Landschaft ist wirklich einzigartig. Kingshouse</p>
+        <p>Die Landschaft ist wirklich einzigartig. Kingshouse ist, so wie bereits Inveroran, ein einsames Hotel. Es gibt nicht einmal eine kleine Ortschaft. Das Wetter hielt bis auf weiteres gut.</p>
       </div>
     </section>
     
     <section class="station">
       <div class="station-header"><h3>Etappe 7: Kingshouse &rarr; Kinlochleven</h3></div>
       <div class="station-content">
-        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+        <p></p>
       </div>
     </section>
     
