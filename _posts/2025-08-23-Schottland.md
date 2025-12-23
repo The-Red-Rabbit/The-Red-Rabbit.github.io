@@ -76,14 +76,22 @@ Im Sommer 2025 hatte ich zusammen mit meiner Partnerin die Gelegenheit in Schott
     <section class="station">
       <div class="station-header"><h3>Etappe 7: Kingshouse &rarr; Kinlochleven</h3></div>
       <div class="station-content">
-        <p></p>
+        <p>Uns steht ein steiler Aufstieg bevor. Oben angekommen werden wir mit einem grandiosen Panorama belohnt. Das Wandern hat einen sehr meditativen und entspannenden Charakter, obwohl es natürlich auch körperlich anstrengend ist.<br><i>Bilder kommen bald!</i></p>
       </div>
     </section>
     
     <section class="station">
       <div class="station-header"><h3>Etappe 8: Kinlochleven &rarr; Fort William</h3></div>
       <div class="station-content">
-        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+        <p>Kinlochleven ist ein kleiner, aber spannender Ort. Unsere Gastgeberin war sehr freundlich. Motiviert begaben wir uns auf die letzte Etappe zum Ziel in Fort William.</p>
+      </div>
+    </section>
+    
+    <section class="station">
+      <div class="station-header"><h3>Edinburgh und die Heimreise über Brüssel</h3></div>
+      <div class="station-content">
+        <p>Zum Abschluss unserer Reise verbringen wir noch ein paar Tage in Edinburgh. Trotz des seltsamen Gastgebers, haben wir eine tolle Zeit in dieser schönen Stadt. Neben dem Sightseeing besuchen wir (kostenlos !) Veranstaltungen eines mehrtägigen Stadtfestes, von dem wir bis zur Ankunft nichts wussten.</p>
+        <p>Die Heimreise treten wir wieder mit dem Eurostar ab London an. Wir lassen die Reise mit einem Zwischenstopp in Brüssel ausklingen und freuen uns auf die Heimkehr.</p>
       </div>
     </section>
   </main>
