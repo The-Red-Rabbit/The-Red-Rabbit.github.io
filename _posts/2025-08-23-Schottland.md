@@ -48,21 +48,21 @@ Im Sommer 2025 hatte ich zusammen mit meiner Partnerin die Gelegenheit in Schott
     <section class="station">
       <div class="station-header"><h3>Etappe 3: Rowardennan &rarr; Inverarnan</h3></div>
       <div class="station-content">
-        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+        <p>Dieser Abschnitt verläuft fast vollständig am Ufer des Loch Lomond entlang. Das Terrain ist sehr herausfordernd und wir sind froh dieses unbeschadet überstanden zu haben. Zwischendurch die Füße in das kalte und klare Wasser des Sees zu halten, tat wahrlich gut.</p>
       </div>
     </section>
     
     <section class="station">
       <div class="station-header"><h3>Etappe 4: Inverarnan &rarr; Tyndrum</h3></div>
       <div class="station-content">
-        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+        <p>Fast 20 km und nur wenige Höhenmeter sorgen für einen willkommenden Kontrast zu den Abschnitten davor. Dennoch kommen wir erschöpft aber glücklich in Tyndrum an.</p>
       </div>
     </section>
     
     <section class="station">
       <div class="station-header"><h3>Etappe 5: Tyndrum &rarr; Inveroran</h3></div>
       <div class="station-content">
-        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+        <p>Ab diesem Punkt der Wanderung wird die Gegend immer abgelegender und ruhiger. Die Natur in den Highlands präsentiert sich in ihrer vollen Schönheit.<br><i>Bilder kommen bald!</i></p>
       </div>
     </section>
     
