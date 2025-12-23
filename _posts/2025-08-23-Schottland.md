@@ -34,14 +34,14 @@ Im Sommer 2025 hatte ich zusammen mit meiner Partnerin die Gelegenheit in Schott
     <section class="station">
       <div class="station-header"><h3>Etappe 1: Milngavine &rarr; Drymen</h3></div>
       <div class="station-content">
-        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+        <p>Der erste Abschnitt des West Highland Way. Wir sind voller Vorfreude und laufen los. Die Benutzung der Wanderstöcke fällt mir am Anfang noch schwer.</p>
       </div>
     </section>
     
     <section class="station">
       <div class="station-header"><h3>Etappe 2: Drymen &rarr; Rowardennan</h3></div>
       <div class="station-content">
-        <p>Ein Tal voller Dramatik – sowohl landschaftlich als auch historisch.</p>
+        <p>Ich werde krank und kann diese Etappe nicht mitlaufen. Die richtige Entscheidung wie sich herausstellt. In Rowardennan angekommen, schlafe ich den restlichen Tag.</p>
       </div>
     </section>
     
