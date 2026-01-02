@@ -23,3 +23,7 @@
           desc: "+1 auf Trefferwurf, wenn stationär geblieben."
     - name: "Twin gauss flayer"
       range: '24"'
+      keywords:
+        - name: "LETHAL HITS"
+        - name: "RAPID FIRE 1"
+        - name: "TWIN-LINKED"
