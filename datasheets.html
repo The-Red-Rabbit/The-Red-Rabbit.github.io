@@ -1,0 +1,181 @@
+---
+layout: default
+title: Unit Datasheet Test
+---
+
+<style>
+  :root {
+    --app-bg: #1a2a33;
+    --app-accent: #386682;
+    --app-text: #ffffff;
+    --stat-bg: #f3f4f6;
+    --stat-border: #1a2a33;
+  }
+
+  .ds-container {
+    max-width: 450px;
+    margin: 20px auto;
+    background-color: var(--app-bg);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: var(--app-text);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+  /* Header & Stats */
+  .ds-header {
+    padding: 15px;
+    font-style: italic;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-color: white;
+    padding: 5px;
+    gap: 2px;
+  }
+
+  .stat-box {
+    border: 2px solid var(--stat-border);
+    text-align: center;
+    color: var(--stat-border);
+  }
+
+  .stat-label {
+    font-size: 0.65rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 0;
+  }
+
+  .stat-value {
+    background-color: #f9fafb;
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-style: italic;
+    padding-bottom: 2px;
+  }
+
+  /* Accordions */
+  details summary {
+    list-style: none;
+    cursor: pointer;
+    background-color: var(--app-accent);
+    padding: 12px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  details summary::-webkit-details-marker { display: none; }
+
+  details summary::after {
+    content: '▼';
+    font-size: 0.7rem;
+    transition: transform 0.2s;
+  }
+
+  details[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+  .content-block {
+    background-color: #e5e7eb;
+    color: #111827;
+    padding: 0;
+  }
+
+  /* Weapon Table */
+  .weapon-row {
+    padding: 10px;
+    border-bottom: 1px solid #d1d5db;
+  }
+
+  .weapon-name {
+    background-color: #1f2937;
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .weapon-stats {
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr);
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+  }
+
+  .keyword-pill {
+    display: inline-block;
+    border: 1px dotted #4b5563;
+    padding: 1px 6px;
+    font-size: 0.7rem;
+    margin-top: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+</style>
+
+<div class="ds-container">
+  <div class="ds-header">Canoptek Doomstalker</div>
+
+  <div class="stat-grid">
+    <div class="stat-box"><div class="stat-label">M</div><div class="stat-value">8"</div></div>
+    <div class="stat-box"><div class="stat-label">T</div><div class="stat-value">8</div></div>
+    <div class="stat-box"><div class="stat-label">SV</div><div class="stat-value">3+</div></div>
+    <div class="stat-box"><div class="stat-label">W</div><div class="stat-value">12</div></div>
+    <div class="stat-box"><div class="stat-label">LD</div><div class="stat-value">8+</div></div>
+    <div class="stat-box"><div class="stat-label">OC</div><div class="stat-value">4</div></div>
+  </div>
+
+  <div style="background-color: #0891b2; padding: 8px 15px; display: flex; justify-content: space-between; align-items: center; font-weight: bold;">
+    <span>INVULNERABLE SAVE</span>
+    <span style="background: white; color: #0891b2; border-radius: 50%; width: 28px; height: 28px; display: flex; justify-content: center; align-items: center;">4+</span>
+  </div>
+
+  <details open>
+    <summary>Ranged Weapons</summary>
+    <div class="content-block">
+      <div class="weapon-row">
+        <div class="weapon-name">Doomsday blaster</div>
+        <div class="weapon-stats" style="color: #6b7280; font-size: 0.7rem;">
+          <span>RANGE</span><span>A</span><span>BS</span><span>S</span><span>AP</span><span>D</span>
+        </div>
+        <div class="weapon-stats">
+          <span>48"</span><span>D6+1</span><span>4+</span><span>14</span><span>-3</span><span>3</span>
+        </div>
+        <div class="keyword-pill">Blast</div>
+        <div class="keyword-pill">Heavy</div>
+      </div>
+    </div>
+  </details>
+
+  <details>
+    <summary>Abilities</summary>
+    <div class="content-block" style="padding: 10px;">
+      <p style="font-size: 0.85rem;"><strong>Bondsman Ability:</strong> Text hier einfügen...</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Keywords</summary>
+    <div class="content-block" style="padding: 10px; font-size: 0.8rem; text-transform: uppercase;">
+      Vehicle, Walker, Canoptek, Doomstalker
+    </div>
+  </details>
+</div>
