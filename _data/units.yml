@@ -25,3 +25,61 @@
   damaged: "1-4 WOUNDS REMAINING: -1 on Hit rolls."
   composition: "1 Canoptek Doomstalker"
   unit_keywords: "Vehicle, Walker, Canoptek"
+
+
+- name: "Canoptek Doomstalker"
+  faction_color: "#386682"
+  invul: "4+"
+  stats: { M: '8"', T: "8", SV: "3+", W: "12", LD: "8+", OC: "4" }
+  ranged_weapons:
+    - name: "Doomsday blaster"
+      range: '48"'
+      a: "D6+1"
+      bs: "4+"
+      s: "14"
+      ap: "-3"
+      d: "3"
+      keywords: 
+        - { name: "BLAST", desc: "Zusätzliche Attacken gegen große Einheiten." }
+        - { name: "HEAVY", desc: "+1 auf Trefferwurf, wenn stationär." }
+  melee_weapons:
+    - name: "Doomsday stalker limbs"
+      range: "Melee"
+      a: "3"
+      ws: "4+"
+      s: "6"
+      ap: "0"
+      d: "1"
+  abilities: "Geben Sie hier die Sonderregeln ein..."
+  damaged: "1-4 WOUNDS REMAINING: -1 on Hit rolls."
+  composition: "1 Canoptek Doomstalker"
+  unit_keywords: "Vehicle, Walker, Canoptek"
+
+
+- name: "Canoptek Doomstalker"
+  faction_color: "#386682"
+  invul: "4+"
+  stats: { M: '8"', T: "8", SV: "3+", W: "12", LD: "8+", OC: "4" }
+  ranged_weapons:
+    - name: "Doomsday blaster"
+      range: '48"'
+      a: "D6+1"
+      bs: "4+"
+      s: "14"
+      ap: "-3"
+      d: "3"
+      keywords: 
+        - { name: "BLAST", desc: "Zusätzliche Attacken gegen große Einheiten." }
+        - { name: "HEAVY", desc: "+1 auf Trefferwurf, wenn stationär." }
+  melee_weapons:
+    - name: "Doomsday stalker limbs"
+      range: "Melee"
+      a: "3"
+      ws: "4+"
+      s: "6"
+      ap: "0"
+      d: "1"
+  abilities: "Geben Sie hier die Sonderregeln ein..."
+  damaged: "1-4 WOUNDS REMAINING: -1 on Hit rolls."
+  composition: "1 Canoptek Doomstalker"
+  unit_keywords: "Vehicle, Walker, Canoptek"
