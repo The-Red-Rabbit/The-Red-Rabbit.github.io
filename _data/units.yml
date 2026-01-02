@@ -1,0 +1,23 @@
+- name: "Canoptek Doomstalker"
+  faction_color: "#386682" # Necron Blau
+  invul: "4+"
+  stats:
+    M: '8"'
+    T: "8"
+    SV: "3+"
+    W: "12"
+    LD: "8+"
+    OC: "4"
+  weapons:
+    - name: "Doomsday blaster"
+      range: '48"'
+      a: "D6+1"
+      bs: "4+"
+      s: "14"
+      ap: "-3"
+      d: "3"
+      keywords: 
+        - name: "BLAST"
+          desc: "Zusätzliche Attacken gegen große Einheiten (+1 pro 5 Modelle)."
+        - name: "HEAVY"
+          desc: "+1 auf Trefferwurf, wenn stationär geblieben."
