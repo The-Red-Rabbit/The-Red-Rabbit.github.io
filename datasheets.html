@@ -120,15 +120,61 @@ title: Unit Datasheet Test
     font-size: 0.85rem;
   }
 
-  .keyword-pill {
-    display: inline-block;
-    border: 1px dotted #4b5563;
-    padding: 1px 6px;
-    font-size: 0.7rem;
-    margin-top: 5px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+  /* Tooltip Container */
+.keyword-pill {
+  position: relative;
+  display: inline-block;
+  cursor: help; /* Zeigt an, dass es interaktiv ist */
+  border: 1px dotted #4b5563;
+  padding: 1px 6px;
+  font-size: 0.7rem;
+  margin-top: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.05);
+}
+
+/* Der eigentliche Tooltip-Text (versteckt) */
+.keyword-pill .tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 8px;
+  position: absolute;
+  z-index: 10;
+  bottom: 125%; /* Über dem Keyword */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-weight: normal;
+  text-transform: none; /* Normale Kleinschreibung für Lesbarkeit */
+  font-size: 0.75rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Kleiner Pfeil nach unten am Tooltip */
+.keyword-pill .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Tooltip anzeigen bei Hover oder Touch */
+.keyword-pill:hover .tooltip-text, 
+.keyword-pill:active .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 </style>
 
 <div class="ds-container">
@@ -159,8 +205,20 @@ title: Unit Datasheet Test
         <div class="weapon-stats">
           <span>48"</span><span>D6+1</span><span>4+</span><span>14</span><span>-3</span><span>3</span>
         </div>
-        <div class="keyword-pill">Blast</div>
-        <div class="keyword-pill">Heavy</div>
+        
+<div class="keyword-pill">
+  BLAST
+  <span class="tooltip-text">
+    Erhöht die Anzahl der Attacken gegen große Einheiten. +1 Attacke für je 5 Modelle in der Zieleinheit.
+  </span>
+</div>
+
+<div class="keyword-pill">
+  HEAVY
+  <span class="tooltip-text">
+    Addiere 1 zum Trefferwurf, wenn sich das Modell in diesem Zug nicht bewegt hat.
+  </span>
+</div>
       </div>
     </div>
   </details>
