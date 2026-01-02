@@ -14,12 +14,13 @@ title: Unit Datasheet Test
 
   .ds-container {
     max-width: 450px;
-    margin: 20px auto;
+    margin: 40px auto;
     background-color: var(--app-bg);
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     color: var(--app-text);
     border-radius: 8px;
-    overflow: hidden;
+    overflow: visible !important;
+    position: relative;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   }
 
@@ -31,6 +32,7 @@ title: Unit Datasheet Test
     text-transform: uppercase;
     font-size: 1.25rem;
     border-bottom: 2px solid rgba(255,255,255,0.1);
+    border-radius: 8px 8px 0 0;
   }
 
   .stat-grid {
@@ -124,7 +126,7 @@ title: Unit Datasheet Test
 .keyword-pill {
   position: relative;
   display: inline-block;
-  cursor: help; /* Zeigt an, dass es interaktiv ist */
+  cursor: help;
   border: 1px dotted #4b5563;
   padding: 1px 6px;
   font-size: 0.7rem;
@@ -132,28 +134,30 @@ title: Unit Datasheet Test
   font-weight: bold;
   text-transform: uppercase;
   background-color: rgba(0,0,0,0.05);
+  
+  /* Verhindert das blaue Markieren/Highlighting beim Klicken */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none; 
 }
 
 /* Der eigentliche Tooltip-Text (versteckt) */
 .keyword-pill .tooltip-text {
   visibility: hidden;
-  width: 200px;
-  background-color: #333;
+  width: 180px; /* Etwas schmaler für mobile Screens */
+  background-color: #111;
   color: #fff;
-  text-align: left;
+  text-align: center;
   border-radius: 4px;
-  padding: 8px;
+  padding: 10px;
   position: absolute;
-  z-index: 999;
-  bottom: 125%; /* Über dem Keyword */
+  z-index: 1000; /* Sehr hoch */
+  bottom: 150%;  /* Mehr Abstand nach oben */
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
-  transition: opacity 0.3s;
-  font-weight: normal;
-  text-transform: none; /* Normale Kleinschreibung für Lesbarkeit */
-  font-size: 0.75rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: opacity 0.2s;
+  pointer-events: none; /* Verhindert, dass der Tooltip selbst Klicks abfängt */
 }
 
 /* Kleiner Pfeil nach unten am Tooltip */
