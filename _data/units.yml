@@ -21,3 +21,5 @@
           desc: "Zusätzliche Attacken gegen große Einheiten (+1 pro 5 Modelle)."
         - name: "HEAVY"
           desc: "+1 auf Trefferwurf, wenn stationär geblieben."
+    - name: "Twin gauss flayer"
+      range: '24"'
