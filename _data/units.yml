@@ -1,4 +1,5 @@
 - name: "Canoptek Doomstalker"
+  image: "https://www.heros-corner.de/images/product_images/info_images/Warhammer/49-29/99120110045_CanoptekDoomstalkerLead.jpg"
   faction_color: "#386682"
   invul: "4+"
   stats: { M: '8"', T: "8", SV: "3+", W: "12", LD: "8+", OC: "4" }
