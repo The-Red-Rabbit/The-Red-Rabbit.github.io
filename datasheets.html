@@ -1,40 +1,40 @@
 ---
 layout: default
-title: Unit Datasheet Test
+title: My Warhammer Units
 ---
 
 <style>
   :root {
     --app-bg: #1a2a33;
-    --app-accent: #386682;
     --app-text: #ffffff;
-    --stat-bg: #f3f4f6;
     --stat-border: #1a2a33;
   }
 
+  /* Container Fix: overflow visible damit Tooltips nicht abgeschnitten werden */
   .ds-container {
     max-width: 450px;
-    margin: 40px auto;
+    margin: 50px auto;
     background-color: var(--app-bg);
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: sans-serif;
     color: var(--app-text);
     border-radius: 8px;
-    overflow: visible !important;
     position: relative;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    overflow: visible !important; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    user-select: none; /* Verhindert Markieren auf der ganzen Karte */
+    -webkit-tap-highlight-color: transparent;
   }
 
-  /* Header & Stats */
   .ds-header {
     padding: 15px;
     font-style: italic;
     font-weight: 800;
     text-transform: uppercase;
-    font-size: 1.25rem;
-    border-bottom: 2px solid rgba(255,255,255,0.1);
+    background-color: rgba(255,255,255,0.05);
     border-radius: 8px 8px 0 0;
   }
 
+  /* Stat Grid */
   .stat-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -42,202 +42,121 @@ title: Unit Datasheet Test
     padding: 5px;
     gap: 2px;
   }
-
-  .stat-box {
-    border: 2px solid var(--stat-border);
-    text-align: center;
-    color: var(--stat-border);
-  }
-
-  .stat-label {
-    font-size: 0.65rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 2px 0;
-  }
-
-  .stat-value {
-    background-color: #f9fafb;
-    font-size: 1.1rem;
-    font-weight: 900;
-    font-style: italic;
-    padding-bottom: 2px;
-  }
+  .stat-box { border: 2px solid var(--stat-border); text-align: center; color: var(--stat-border); }
+  .stat-label { font-size: 0.6rem; font-weight: bold; }
+  .stat-value { background-color: #f9fafb; font-size: 1.1rem; font-weight: 900; font-style: italic; }
 
   /* Accordions */
   details summary {
     list-style: none;
     cursor: pointer;
-    background-color: var(--app-accent);
     padding: 12px 15px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.9rem;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
-
   details summary::-webkit-details-marker { display: none; }
+  details summary::after { content: '▼'; font-size: 0.7rem; transition: 0.2s; }
+  details[open] summary::after { transform: rotate(180deg); }
 
-  details summary::after {
-    content: '▼';
-    font-size: 0.7rem;
-    transition: transform 0.2s;
-  }
+  .content-block { background-color: #e5e7eb; color: #111827; padding: 10px; }
 
-  details[open] summary::after {
-    transform: rotate(180deg);
-  }
+  /* Waffen-Tabelle */
+  .weapon-name { background-color: #1f2937; color: white; padding: 4px 8px; font-weight: bold; width: 100%; display: block; margin-bottom: 5px; }
+  .weapon-stats { display: grid; grid-template-columns: 2fr repeat(5, 1fr); text-align: center; font-weight: bold; font-size: 0.8rem; }
 
-  .content-block {
-    background-color: #e5e7eb;
-    color: #111827;
-    padding: 0;
-  }
-
-  /* Weapon Table */
-  .weapon-row {
-    padding: 10px;
-    border-bottom: 1px solid #d1d5db;
-  }
-
-  .weapon-name {
-    background-color: #1f2937;
-    color: white;
-    padding: 4px 8px;
-    font-weight: bold;
-    font-size: 0.9rem;
+  /* TOOLTIP SYSTEM */
+  .keyword-pill {
+    position: relative;
     display: inline-block;
-    width: 100%;
-    margin-bottom: 5px;
-  }
-
-  .weapon-stats {
-    display: grid;
-    grid-template-columns: 2fr repeat(5, 1fr);
-    text-align: center;
+    border: 1px dotted #4b5563;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    margin: 5px 4px 0 0;
     font-weight: bold;
-    font-size: 0.85rem;
+    text-transform: uppercase;
+    cursor: help;
   }
 
-  /* Tooltip Container */
-.keyword-pill {
-  position: relative;
-  display: inline-block;
-  cursor: help;
-  border: 1px dotted #4b5563;
-  padding: 1px 6px;
-  font-size: 0.7rem;
-  margin-top: 5px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: rgba(0,0,0,0.05);
-  
-  /* Verhindert das blaue Markieren/Highlighting beim Klicken */
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  user-select: none; 
-}
+  .keyword-pill .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 9999;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+    font-weight: normal;
+    text-transform: none;
+    pointer-events: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+  }
 
-/* Der eigentliche Tooltip-Text (versteckt) */
-.keyword-pill .tooltip-text {
-  visibility: hidden;
-  width: 180px; /* Etwas schmaler für mobile Screens */
-  background-color: #111;
-  color: #fff;
-  text-align: center;
-  border-radius: 4px;
-  padding: 10px;
-  position: absolute;
-  z-index: 1000; /* Sehr hoch */
-  bottom: 150%;  /* Mehr Abstand nach oben */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.2s;
-  pointer-events: none; /* Verhindert, dass der Tooltip selbst Klicks abfängt */
-}
+  /* Tooltip Pfeil */
+  .keyword-pill .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; left: 50%;
+    margin-left: -5px;
+    border-width: 5px; border-style: solid;
+    border-color: #111 transparent transparent transparent;
+  }
 
-/* Kleiner Pfeil nach unten am Tooltip */
-.keyword-pill .tooltip-text::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #333 transparent transparent transparent;
-}
-
-/* Tooltip anzeigen bei Hover oder Touch */
-.keyword-pill:hover .tooltip-text, 
-.keyword-pill:active .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
-
+  .keyword-pill:hover .tooltip-text, .keyword-pill:active .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
 </style>
 
+{% for unit in site.data.units %}
 <div class="ds-container">
-  <div class="ds-header">Canoptek Doomstalker</div>
+  <div class="ds-header">{{ unit.name }}</div>
 
   <div class="stat-grid">
-    <div class="stat-box"><div class="stat-label">M</div><div class="stat-value">8"</div></div>
-    <div class="stat-box"><div class="stat-label">T</div><div class="stat-value">8</div></div>
-    <div class="stat-box"><div class="stat-label">SV</div><div class="stat-value">3+</div></div>
-    <div class="stat-box"><div class="stat-label">W</div><div class="stat-value">12</div></div>
-    <div class="stat-box"><div class="stat-label">LD</div><div class="stat-value">8+</div></div>
-    <div class="stat-box"><div class="stat-label">OC</div><div class="stat-value">4</div></div>
+    {% for stat in unit.stats %}
+    <div class="stat-box">
+      <div class="stat-label">{{ stat[0] }}</div>
+      <div class="stat-value">{{ stat[1] }}</div>
+    </div>
+    {% endfor %}
   </div>
 
   <div style="background-color: #0891b2; padding: 8px 15px; display: flex; justify-content: space-between; align-items: center; font-weight: bold;">
     <span>INVULNERABLE SAVE</span>
-    <span style="background: white; color: #0891b2; border-radius: 50%; width: 28px; height: 28px; display: flex; justify-content: center; align-items: center;">4+</span>
+    <span style="background: white; color: #0891b2; border-radius: 50%; width: 28px; height: 28px; display: flex; justify-content: center; align-items: center;">{{ unit.invul }}</span>
   </div>
 
   <details open>
-    <summary>Ranged Weapons</summary>
+    <summary style="background-color: {{ unit.faction_color | default: '#386682' }}">Ranged Weapons</summary>
     <div class="content-block">
-      <div class="weapon-row">
-        <div class="weapon-name">Doomsday blaster</div>
-        <div class="weapon-stats" style="color: #6b7280; font-size: 0.7rem;">
+      {% for weapon in unit.weapons %}
+      <div style="margin-bottom: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+        <span class="weapon-name">{{ weapon.name }}</span>
+        <div class="weapon-stats" style="color: #666; font-size: 0.65rem;">
           <span>RANGE</span><span>A</span><span>BS</span><span>S</span><span>AP</span><span>D</span>
         </div>
         <div class="weapon-stats">
-          <span>48"</span><span>D6+1</span><span>4+</span><span>14</span><span>-3</span><span>3</span>
+          <span>{{ weapon.range }}</span><span>{{ weapon.a }}</span><span>{{ weapon.bs }}</span><span>{{ weapon.s }}</span><span>{{ weapon.ap }}</span><span>{{ weapon.d }}</span>
         </div>
         
-<div class="keyword-pill">
-  BLAST
-  <span class="tooltip-text">
-    Erhöht die Anzahl der Attacken gegen große Einheiten. +1 Attacke für je 5 Modelle in der Zieleinheit.
-  </span>
-</div>
-
-<div class="keyword-pill">
-  HEAVY
-  <span class="tooltip-text">
-    Addiere 1 zum Trefferwurf, wenn sich das Modell in diesem Zug nicht bewegt hat.
-  </span>
-</div>
+        {% for kw in weapon.keywords %}
+        <div class="keyword-pill">
+          {{ kw.name }}
+          <span class="tooltip-text">{{ kw.desc }}</span>
+        </div>
+        {% endfor %}
       </div>
-    </div>
-  </details>
-
-  <details>
-    <summary>Abilities</summary>
-    <div class="content-block" style="padding: 10px;">
-      <p style="font-size: 0.85rem;"><strong>Bondsman Ability:</strong> Text hier einfügen...</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>Keywords</summary>
-    <div class="content-block" style="padding: 10px; font-size: 0.8rem; text-transform: uppercase;">
-      Vehicle, Walker, Canoptek, Doomstalker
+      {% endfor %}
     </div>
   </details>
 </div>
+{% endfor %}
