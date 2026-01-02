@@ -1,6 +1,6 @@
 ---
 layout: default
-title: My Warhammer Units
+title: Warhammer Datasheets
 ---
 
 <style>
@@ -8,20 +8,21 @@ title: My Warhammer Units
     --app-bg: #1a2a33;
     --app-text: #ffffff;
     --stat-border: #1a2a33;
+    --section-bg: #e5e7eb;
+    --section-text: #111827;
   }
 
-  /* Container Fix: overflow visible damit Tooltips nicht abgeschnitten werden */
   .ds-container {
     max-width: 450px;
-    margin: 50px auto;
+    margin: 60px auto;
     background-color: var(--app-bg);
-    font-family: sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     color: var(--app-text);
     border-radius: 8px;
     position: relative;
     overflow: visible !important; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-    user-select: none; /* Verhindert Markieren auf der ganzen Karte */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    user-select: none;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -30,11 +31,11 @@ title: My Warhammer Units
     font-style: italic;
     font-weight: 800;
     text-transform: uppercase;
-    background-color: rgba(255,255,255,0.05);
+    font-size: 1.2rem;
     border-radius: 8px 8px 0 0;
   }
 
-  /* Stat Grid */
+  /* Stats Grid */
   .stat-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -43,8 +44,8 @@ title: My Warhammer Units
     gap: 2px;
   }
   .stat-box { border: 2px solid var(--stat-border); text-align: center; color: var(--stat-border); }
-  .stat-label { font-size: 0.6rem; font-weight: bold; }
-  .stat-value { background-color: #f9fafb; font-size: 1.1rem; font-weight: 900; font-style: italic; }
+  .stat-label { font-size: 0.6rem; font-weight: bold; padding: 2px 0; }
+  .stat-value { background-color: #f3f4f6; font-size: 1.1rem; font-weight: 900; font-style: italic; }
 
   /* Accordions */
   details summary {
@@ -53,44 +54,59 @@ title: My Warhammer Units
     padding: 12px 15px;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 0.9rem;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   details summary::-webkit-details-marker { display: none; }
-  details summary::after { content: '▼'; font-size: 0.7rem; transition: 0.2s; }
+  details summary::after { content: '▼'; font-size: 0.7rem; transition: 0.3s; }
   details[open] summary::after { transform: rotate(180deg); }
 
-  .content-block { background-color: #e5e7eb; color: #111827; padding: 10px; }
+  .content-block { 
+    background-color: var(--section-bg); 
+    color: var(--section-text); 
+    padding: 10px; 
+    border-bottom: 1px solid #d1d5db;
+  }
 
-  /* Waffen-Tabelle */
-  .weapon-name { background-color: #1f2937; color: white; padding: 4px 8px; font-weight: bold; width: 100%; display: block; margin-bottom: 5px; }
-  .weapon-stats { display: grid; grid-template-columns: 2fr repeat(5, 1fr); text-align: center; font-weight: bold; font-size: 0.8rem; }
+  /* Waffen-Design */
+  .weapon-name { background-color: #1f2937; color: white; padding: 4px 10px; font-weight: bold; display: block; margin-bottom: 5px; }
+  .weapon-stats-header { color: #666; font-size: 0.65rem; display: grid; grid-template-columns: 2fr repeat(5, 1fr); text-align: center; }
+  .weapon-stats-values { display: grid; grid-template-columns: 2fr repeat(5, 1fr); text-align: center; font-weight: bold; font-size: 0.9rem; }
 
-  /* TOOLTIP SYSTEM */
+  /* Keywords Zentrierung */
+  .keyword-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
   .keyword-pill {
     position: relative;
-    display: inline-block;
     border: 1px dotted #4b5563;
-    padding: 2px 6px;
+    padding: 2px 8px;
     font-size: 0.7rem;
-    margin: 5px 4px 0 0;
     font-weight: bold;
     text-transform: uppercase;
     cursor: help;
   }
 
+  /* Tooltip Fixes */
   .keyword-pill .tooltip-text {
     visibility: hidden;
-    width: 200px;
+    width: 180px;
     background-color: #111;
     color: #fff;
     text-align: center;
-    padding: 8px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 6px;
     position: absolute;
     z-index: 9999;
-    bottom: 130%;
+    bottom: 140%;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -98,10 +114,9 @@ title: My Warhammer Units
     font-weight: normal;
     text-transform: none;
     pointer-events: none;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
   }
 
-  /* Tooltip Pfeil */
   .keyword-pill .tooltip-text::after {
     content: "";
     position: absolute;
@@ -130,33 +145,61 @@ title: My Warhammer Units
     {% endfor %}
   </div>
 
-  <div style="background-color: #0891b2; padding: 8px 15px; display: flex; justify-content: space-between; align-items: center; font-weight: bold;">
+  <div style="background-color: #0891b2; padding: 10px 15px; display: flex; justify-content: space-between; align-items: center; font-weight: bold;">
     <span>INVULNERABLE SAVE</span>
-    <span style="background: white; color: #0891b2; border-radius: 50%; width: 28px; height: 28px; display: flex; justify-content: center; align-items: center;">{{ unit.invul }}</span>
+    <span style="background: white; color: #0891b2; border-radius: 50%; width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; border: 2px solid white;">{{ unit.invul }}</span>
   </div>
 
   <details open>
     <summary style="background-color: {{ unit.faction_color | default: '#386682' }}">Ranged Weapons</summary>
     <div class="content-block">
-      {% for weapon in unit.weapons %}
-      <div style="margin-bottom: 15px; border-bottom: 1px solid #ccc; padding-bottom: 10px;">
+      {% for weapon in unit.ranged_weapons %}
+      <div style="margin-bottom: 15px;">
         <span class="weapon-name">{{ weapon.name }}</span>
-        <div class="weapon-stats" style="color: #666; font-size: 0.65rem;">
-          <span>RANGE</span><span>A</span><span>BS</span><span>S</span><span>AP</span><span>D</span>
+        <div class="weapon-stats-header"><span>RANGE</span><span>A</span><span>BS</span><span>S</span><span>AP</span><span>D</span></div>
+        <div class="weapon-stats-values"><span>{{ weapon.range }}</span><span>{{ weapon.a }}</span><span>{{ weapon.bs }}</span><span>{{ weapon.s }}</span><span>{{ weapon.ap }}</span><span>{{ weapon.d }}</span></div>
+        <div class="keyword-container">
+          {% for kw in weapon.keywords %}
+          <div class="keyword-pill">{{ kw.name }}<span class="tooltip-text">{{ kw.desc }}</span></div>
+          {% endfor %}
         </div>
-        <div class="weapon-stats">
-          <span>{{ weapon.range }}</span><span>{{ weapon.a }}</span><span>{{ weapon.bs }}</span><span>{{ weapon.s }}</span><span>{{ weapon.ap }}</span><span>{{ weapon.d }}</span>
-        </div>
-        
-        {% for kw in weapon.keywords %}
-        <div class="keyword-pill">
-          {{ kw.name }}
-          <span class="tooltip-text">{{ kw.desc }}</span>
-        </div>
-        {% endfor %}
       </div>
       {% endfor %}
     </div>
   </details>
+
+  <details>
+    <summary style="background-color: {{ unit.faction_color | default: '#386682' }}">Melee Weapons</summary>
+    <div class="content-block">
+      {% for weapon in unit.melee_weapons %}
+      <div style="margin-bottom: 10px;">
+        <span class="weapon-name">{{ weapon.name }}</span>
+        <div class="weapon-stats-header"><span>RANGE</span><span>A</span><span>WS</span><span>S</span><span>AP</span><span>D</span></div>
+        <div class="weapon-stats-values"><span>{{ weapon.range }}</span><span>{{ weapon.a }}</span><span>{{ weapon.ws }}</span><span>{{ weapon.s }}</span><span>{{ weapon.ap }}</span><span>{{ weapon.d }}</span></div>
+      </div>
+      {% endfor %}
+    </div>
+  </details>
+
+  <details>
+    <summary style="background-color: {{ unit.faction_color | default: '#386682' }}">Abilities</summary>
+    <div class="content-block" style="font-size: 0.85rem;">{{ unit.abilities }}</div>
+  </details>
+
+  <details>
+    <summary style="background-color: {{ unit.faction_color | default: '#386682' }}">Damaged</summary>
+    <div class="content-block" style="font-size: 0.85rem; font-style: italic;">{{ unit.damaged }}</div>
+  </details>
+
+  <details>
+    <summary style="background-color: {{ unit.faction_color | default: '#386682' }}">Unit Composition</summary>
+    <div class="content-block" style="font-size: 0.85rem;">{{ unit.composition }}</div>
+  </details>
+
+  <details>
+    <summary style="background-color: {{ unit.faction_color | default: '#386682' }}">Keywords</summary>
+    <div class="content-block" style="font-size: 0.75rem; text-transform: uppercase; font-weight: bold;">{{ unit.unit_keywords }}</div>
+  </details>
+
 </div>
 {% endfor %}
