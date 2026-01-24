@@ -1,20 +1,36 @@
-
-<!--
-Source - https://stackoverflow.com/q
-Posted by tohhy
-Retrieved 2026-01-24, License - CC BY-SA 3.0
--->
-
 <html>
     <head>
-        <!-- some code here -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            .container {
+                width: 100%;
+                height: 100%;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        </style>
     </head>
+
     <body>
-        <div class="screenFourth">
-            <div class="container">
-                <iframe src="https://circuitverse.org/simulator/embed/e44?theme=lite-born-spring&display_title=false&clock_time=false&fullscreen=true&zoom_in_out=true" style="border-width:; border-style: ; border-color:;" name="myiframe" id="projectPreview" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500" width="500" allowFullScreen></iframe>
-            </div>
+        <div class="container">
+            <iframe 
+                src="https://circuitverse.org/simulator/embed/e44?theme=lite-born-spring&display_title=false&clock_time=false&fullscreen=true&zoom_in_out=true"
+                name="myiframe"
+                id="projectPreview"
+                scrolling="no"
+                allowfullscreen>
+            </iframe>
         </div>
     </body>
 </html>
